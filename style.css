@@ -1,0 +1,45 @@
+/* ------------------------------------header----------------------------------- */
+  header {
+      background: gray;
+      padding: 20px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;}
+      
+       header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+    body{margin: 0px;
+    }
+    /* ---------------------------------------------------Center--------------------------------------- */
+   .centergame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+    .centergame button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.centergame img {
+  width: 300px;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.centergame img:active {
+  transform: scale(0.95);
+}
+/* -----------------------------------------------placar----------------------------- */
+ .placar {
+  display: flex;
+  flex-direction: column; /* empilha os elementos na vertical */
+  justify-content: center;
+  align-items: center;
+}
