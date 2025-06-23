@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CATCLIKER</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+   
 </head>
 <body>
     <main>
@@ -20,14 +20,34 @@
         <h2>MUHEHEHEHES</h2> 
         <p id="points">0</p>
     </div>
-    <div class="centergame">
-        <button onclick="playClickSound(), aumentarPontuacao()"  ><img src="assets/gatorisonho.jpg" alt="gatorisonho"></button>
-        <audio id="clickSound" src="assets/risadadogatorisonho.mp3" preload="auto"></audio>
+  
+
+    <div class="game-container">
+  <div class="centergame">
+    <button onclick="playClickSound(), aumentarPontuacao()">
+      <img src="assets/gatorisonho.jpg" alt="gatorisonho">
+    </button>
+    <audio id="clickSound" src="assets/risadadogatorisonho.mp3" preload="auto"></audio>
+  </div>
+
+  <div id="loja">
+    <h2>Loja de Power-Ups</h2>
+    <div class="powerup" onclick="comprar('dobroPonto')">
+      <p>Dobro de Pontos</p>
+      <p>Preço: <span id="preco-dobroPonto">50</span></p>
+    </div>
+    <div class="powerup" onclick="comprar('autoClick')">
+      <p>Auto Click</p>
+      <p>Preço: <span id="preco-autoClick">100</span></p>
+    </div>
+  </div>
+</div>
+
     </div>
     <div class="down">
-    <button onclick="toggleMute()" id="muteBtn"><img width="240px" id="muteIcon" src="assets/gatodesmutado.jpg" alt=""></button>
+<button onclick="toggleMute()"><img width="240px" id="muteIcon" src="assets/gatodesmutado.jpg" alt=""></button>
 </div>
     </main>
-    
+     <script src="script.js"></script>
 </body>
 </html>

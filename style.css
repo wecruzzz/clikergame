@@ -13,12 +13,19 @@
     body{margin: 0px;
     }
     /* ---------------------------------------------------Center--------------------------------------- */
-   .centergame {
+ .game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.centergame {
+  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
 }
+
 
     .centergame button {
   background: none;
@@ -49,4 +56,24 @@
   border: none;
   padding: 0;
   cursor: pointer;
+}
+/* ----------------------------------------loja-------------------------- */
+#loja {
+  border: 2px solid #444;
+  padding: 16px;
+  width: 250px;
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.powerup {
+  border: 1px solid #aaa;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.powerup:hover {
+  background: #e0ffe0;
 }
